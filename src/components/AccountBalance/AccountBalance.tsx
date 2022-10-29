@@ -6,12 +6,12 @@ interface AccountBalanceProps {
 }
 
 const AccountBalance = ({ balance }: AccountBalanceProps) => (
-  <div className="account-balance__wrapper">
-    <div className="account-balance__data">
-      <h3 className="account-balance__title">My balance</h3>
-      <p className="account-balance__amount">{formatToAmericanDollar(balance)}</p>
+  <div className="AccountBalance">
+    <div className="AccountBalance__data">
+      <h3 className="AccountBalance__title">My balance</h3>
+      <p className="AccountBalance__amount">{formatToAmericanDollar(balance)}</p>
     </div>
-    <div className="account-balance__circles">
+    <div className="AccountBalance__circles">
       <svg viewBox="-240 20 300 60">
         <circle />
         <circle />

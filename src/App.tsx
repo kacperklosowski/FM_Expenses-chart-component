@@ -7,7 +7,7 @@ const App = () => {
   const [balance, setBalance] = useState(921.48);
 
   return (
-    <div className="app-container">
+    <div className="App">
       <AccountBalance balance={balance} />
     </div>
   );
