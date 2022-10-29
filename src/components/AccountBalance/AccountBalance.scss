@@ -1,0 +1,64 @@
+@use 'src/styles/colors';
+@use 'src/styles/fonts';
+@use 'src/styles/variables';
+
+.account-balance__wrapper {
+  background-color: colors.$soft-red;
+  color: colors.$white;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: variables.$breakpoint-mobile) {
+    width: 300px;
+  }
+
+  .account-balance__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.3rem;
+
+    .account-balance__title {
+      font-size: fonts.$font-size-s;
+    }
+
+    .account-balance__amount {
+      font-size: fonts.$font-size-l;
+      font-weight: fonts.$font-weight-bold;
+    }
+  }
+
+  .account-balance__circles {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    circle {
+      r: 20;
+    }
+    circle:nth-child(1) {
+      fill: colors.$dark-brown;
+      cx: 30;
+      cy: 50;
+    }
+
+    circle:nth-child(2) {
+      cx: 5;
+      cy: 50;
+      fill: none;
+      stroke: colors.$white;
+      stroke-width: 2;
+    }
+
+    @media screen and (max-width: variables.$breakpoint-mobile) {
+      circle {
+        r: 22;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use 'src/styles/fonts';
+@use 'src/styles/colors';
+
+body {
+  font-family: fonts.$font-family;
+  background-color: colors.$cream;
+}

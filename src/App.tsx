@@ -1,11 +1,16 @@
-import './App.scss';
+import { useState } from "react";
+
+import AccountBalance from "./components/AccountBalance/AccountBalance";
+import "./App.scss";
 
 const App = () => {
-  return (
-    <div>
-      <p>Hello</p>
-    </div>
-  )
-}
+  const [balance, setBalance] = useState(921.48);
 
-export default App
+  return (
+    <div className="app-container">
+      <AccountBalance balance={balance} />
+    </div>
+  );
+};
+
+export default App;
