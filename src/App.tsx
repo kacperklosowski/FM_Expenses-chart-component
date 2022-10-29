@@ -1,0 +1,11 @@
+import './App.scss';
+
+const App = () => {
+  return (
+    <div>
+      <p>Hello</p>
+    </div>
+  )
+}
+
+export default App
