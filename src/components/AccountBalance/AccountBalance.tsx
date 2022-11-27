@@ -1,4 +1,4 @@
-import { formatToAmericanDollar } from "../../utils/format";
+import { formatToAmericanDollar } from "../../utils/utils";
 import "./AccountBalance.scss";
 
 interface AccountBalanceProps {

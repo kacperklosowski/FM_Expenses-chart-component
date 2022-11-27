@@ -1,0 +1,19 @@
+@import 'src/styles/main';
+
+.Expenses {
+  background-color: $white;
+  width: 380px;
+  height: 350px;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
+  &__title {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    color: $dark-brown;
+    padding: 0.3em 0.5em;
+  }
+}

@@ -1,18 +1,15 @@
-@use 'src/styles/colors';
-@use 'src/styles/fonts';
-@use 'src/styles/variables';
+@import 'src/styles/main';
 
 .AccountBalance {
-  background-color: colors.$soft-red;
-  color: colors.$white;
+  background-color: $soft-red;
+  color: $white;
   padding: 1.2rem;
   border-radius: 1rem;
-  width: 350px;
+  width: 380px;
   height: 50px;
   display: flex;
-  justify-content: space-between;
 
-  @media screen and (max-width: variables.$breakpoint-mobile) {
+  @media screen and (max-width: $breakpoint-mobile) {
     width: 300px;
   }
 
@@ -24,12 +21,12 @@
   }
 
   &__title {
-    font-size: fonts.$font-size-s;
+    font-size: $font-size-s;
   }
 
   &__amount {
-    font-size: fonts.$font-size-l;
-    font-weight: fonts.$font-weight-bold;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
   }
 
   &__circles {
@@ -42,7 +39,7 @@
       r: 20;
 
       &:nth-child(1) {
-        fill: colors.$dark-brown;
+        fill: $dark-brown;
         cx: 30;
         cy: 50;
       }
@@ -51,11 +48,11 @@
         cx: 5;
         cy: 50;
         fill: none;
-        stroke: colors.$white;
+        stroke: $white;
         stroke-width: 2;
       }
 
-      @media screen and (max-width: variables.$breakpoint-mobile) {
+      @media screen and (max-width: $breakpoint-mobile) {
         & {
           r: 22;
         }

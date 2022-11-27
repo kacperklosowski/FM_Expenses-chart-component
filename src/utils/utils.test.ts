@@ -1,5 +1,5 @@
 import {describe, it, expect} from 'vitest';
-import {formatToAmericanDollar} from './format';
+import {formatToAmericanDollar} from './utils';
 
 describe('formatToAmericanDollar()', () => {
   it('should format a given number to the American Dollar', () => {

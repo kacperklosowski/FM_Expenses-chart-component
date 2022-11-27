@@ -1,0 +1,45 @@
+@import 'src/styles/main';
+
+.ExpensesChartBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+
+  &__amount {
+    background-color: $dark-brown;
+    color: $white;
+    font-size: $font-size-s;
+    font-weight: $font-weight-bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    top: -2.7em;
+    position: absolute;
+
+  }
+
+  &__bar {
+    width: 35px;
+    height: 80px;
+    background-color: $soft-red;
+    border-radius: 5px;
+
+    &--current {
+      background-color: $cyan;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    color: $medium-brown;
+    font-size: $font-size-s;
+  }
+}

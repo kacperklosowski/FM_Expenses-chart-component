@@ -1,0 +1,13 @@
+@import 'src/styles/main';
+
+.ExpensesSummaryTotal {
+  &__title {
+    font-size: $font-size-s;
+    color: $medium-brown;
+  }
+
+  &__amount {
+    font-size: 38px;
+    font-weight: $font-weight-bold;
+  }
+}
